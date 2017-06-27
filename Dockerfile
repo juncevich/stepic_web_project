@@ -1,6 +1,8 @@
-FROM centos:centos7
+FROM ubuntu:14.04
 
-RUN yum -y install nginx
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y nginx
 
 ADD nginx.conf /etc/nginx/nginx.conf
 
