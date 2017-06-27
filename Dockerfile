@@ -10,4 +10,4 @@ expose 80
 expose 8080
 expose 443
 
-CMD ["/usr/bin/nginx"]
+CMD ["/usr/sbin/nginx"]
